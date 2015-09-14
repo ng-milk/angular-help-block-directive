@@ -1,0 +1,30 @@
+{
+  "name": "angular-help-block-directive",
+  "version": "0.0.1",
+  "description": "A directive that will help you display your help blocks inline. Read more about it  on https://ngmilk.rocks/2015/04/03/angular-directive-for-collapsible-help-blocks-ng-help-block/",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng-milk/angular-help-block-directive.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "help",
+    "block"
+  ],
+  "author": "Dan Mindru <mindrudan@gmail.com> (http://mindrudan.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ng-milk/angular-help-block-directive/issues"
+  },
+  "homepage": "https://github.com/ng-milk/angular-help-block-directive#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-minify-css": "^1.2.1"
+  }
+}

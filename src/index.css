@@ -1,0 +1,88 @@
+.hb-row {
+  width: 100%;
+  margin: 10px 0 0 0;
+  position: relative;
+  left: -15px;
+  padding-left: 15px;
+  border-left: 4px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.hb-row.expanded{
+  border-left: 4px solid #B5B5B5;
+  opacity: 0.8;
+  transition: border 0.3s ease-in-out;
+}
+
+.hb-title {
+  padding-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out
+}
+
+.hb-title:hover {
+  opacity:0.7;
+  transition: all 0.3s ease-in-out
+}
+
+.hb-title:hover i {
+  transform: scale(1.1)
+}
+
+.hb-content {
+  position:relative;
+  padding-bottom: 10px;
+  transition: all .2s ease
+}
+
+.hb-row i {
+  font-size: 18px;
+  margin-right: 5px;
+  position: relative;
+  top: 1px
+}
+
+.hb-row p {
+  margin-top: 5px;
+  margin-bottom: 0
+}
+
+/* ngAnimate styles */
+.hb-content.ng-hide-remove,
+.hb-content.ng-hide-add,
+.hb-content.ng-hide-add-active,
+.hb-content.ng-hide-remove-active {
+  transition: all .2s ease
+}
+
+.hb-content.ng-hide-add {
+  opacity: 1;
+  animation: .2s fadeOut
+}
+
+.hb-content.ng-hide-remove {
+  opacity: 1;
+  animation: .2s fadeInUp
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    bottom: -10px
+  }
+  100% {
+    opacity: 1;
+    bottom: 0
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    bottom: 0
+  }
+  100% {
+    opacity: 0;
+    bottom: -10px
+  }
+}

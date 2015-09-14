@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Angular help block demo</title>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+  <!-- Optional: include ng-animate for some extra sugar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.js"></script>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="dist/ng-help-block.css" rel="stylesheet" type="text/css" />
+  <!-- Optional: include font-awesome to display an icon next to the help block title -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- Just some body style to space things up -->
+  <style>
+    body{
+      padding:60px;
+    }
+  </style>
+</head>
+  <body ng-app="app" ng-controller="ctrl">
+
+    <section help-block help-block-title="{{title}}" help-block-content="{{content}}" help-block-icon-class="fa fa-question-circle"></section>
+
+    <!-- Local JS -->
+    <script src="dist/ng-help-block.js"></script>
+    <script>
+      angular
+        .module('app', ['ngAnimate', 'dm.helpBlock'])
+        .controller('ctrl', ['$scope', function($scope){
+          $scope.title = "Press me for help";
+          $scope.content = "Inline expansion within the current content area is a great idea for a help block. This approach presents a non-interruptive option while maintaining the current context.";
+        }]);
+    </script>
+  </body>
+</html>

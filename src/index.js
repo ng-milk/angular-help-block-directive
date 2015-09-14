@@ -33,7 +33,7 @@ function helpBlockDirective(){
     scope: {},
     restrict: 'A',
     replace: true,
-    templateUrl: '/dist/help-block.html',
+    templateUrl: '/help-block.html',
     link: helpBlockLink
   };
 }

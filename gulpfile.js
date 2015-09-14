@@ -22,11 +22,6 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest(options.dist));
 });
 
-gulp.task('html', function(){
-  return gulp.src([options.src + '/**/*.html'])
-    .pipe(gulp.dest(options.dist));
-});
-
 gulp.task('styles', function(){
   return gulp.src([options.src + '/**/*.css'])
     .pipe(autoprefixer({
@@ -46,4 +41,4 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', gulpsync.sync([['build'], ['watch']]));
-gulp.task('build', gulpsync.sync([['clean'], ['scripts', 'html', 'styles']]));
+gulp.task('build', gulpsync.sync([['clean'], ['scripts', 'styles']]));

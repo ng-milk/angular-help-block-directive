@@ -33,7 +33,14 @@ function helpBlockDirective(){
     scope: {},
     restrict: 'A',
     replace: true,
-    templateUrl: '/help-block.html',
+    template: '<section class="hb-row" ng-class="{\'expanded\': hbVisible}">
+                <p class="hb-title">
+                  <i ng-if="iconClass" class="{{iconClass}}"></i>
+                  <span ng-bind="title"></span>
+                </p>
+
+                <p class="hb-content" ng-bind="content" ng-show="hbVisible"></p>
+              </section>',
     link: helpBlockLink
   };
 }

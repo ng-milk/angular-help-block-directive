@@ -3,7 +3,7 @@
 
 
 ### [Quick Demo](http://ng-milk.github.io/angular-help-block-directive/)
-A directive that will help you display your help blocks inline. Read more about it [here](https://ngmilk.rocks/2015/04/03/angular-directive-for-collapsible-help-blocks-ng-help-block/).
+A directive that will help you display your help blocks inline. Read more about it [here](https://ngmilk.rocks/2015/09/15/angular-directive-for-collapsible-help-blocks-ng-help-block/).
 
 
 ## Usage

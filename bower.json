@@ -1,11 +1,11 @@
 {
   "name": "angular-help-block-directive",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/ng-milk/angular-help-block-directive",
   "authors": [
     "Dan Mindru <mindrudan@gmail.com>"
   ],
-  "description": "A directive that will help you display your help blocks inline. Read more about it  on https://ngmilk.rocks/2015/04/03/angular-directive-for-collapsible-help-blocks-ng-help-block/",
+  "description": "A directive that will help you display your help blocks inline. Read more about it  on https://ngmilk.rocks/2015/09/15/angular-directive-for-collapsible-help-blocks-ng-help-block/",
   "keywords": [
     "angular",
     "angularjs",

@@ -1,5 +1,5 @@
 /*
- * angular-help-block-directive v0.0.1
+ * angular-help-block-directive v0.0.2
  * (c) 2015 Dan Mindru http://mindrudan.com
  * License: MIT
  */
@@ -17,7 +17,7 @@ function helpBlockDirective(){
   function helpBlockLink(scope, element, attrs) {
     var elementTitle = angular.element(element[0].querySelectorAll('.hb-title')[0]);
     scope.hbVisible = false;
-    scope.iconClass = attrs.helpBlockIconClass || null;
+    scope.iconClass = attrs.helpBlockIconClass;
     scope.title = attrs.helpBlockTitle;
     scope.content = attrs.helpBlockContent;
 

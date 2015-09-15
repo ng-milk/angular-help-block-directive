@@ -15,18 +15,15 @@ angular.module('dm.helpBlock', [])
  */
 function helpBlockDirective(){
   function helpBlockLink(scope, element, attrs) {
-    var elementTitle = angular.element(element[0].querySelectorAll('.hb-title')[0]);
     scope.hbVisible = false;
     scope.iconClass = attrs.helpBlockIconClass;
     scope.title = attrs.helpBlockTitle;
     scope.content = attrs.helpBlockContent;
 
     // Toggle help block visibility.
-    elementTitle.bind('click', function togglehelpBlockContent(){
-      scope.$apply(function(){
-        scope.hbVisible = !scope.hbVisible;
-      });
-    });
+    scope.toggle = function togglehelpBlockContent(){
+      scope.hbVisible = !scope.hbVisible;
+    };
   }
 
   return {
@@ -34,7 +31,7 @@ function helpBlockDirective(){
     restrict: 'A',
     replace: true,
     template: '<section class="hb-row" ng-class="{\'expanded\': hbVisible}">
-                <p class="hb-title">
+                <p class="hb-title" ng-click="toggle()">
                   <i ng-if="iconClass" class="{{iconClass}}"></i>
                   <span ng-bind="title"></span>
                 </p>

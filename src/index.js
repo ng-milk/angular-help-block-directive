@@ -1,5 +1,5 @@
 /*
- * angular-help-block-directive v0.0.3
+ * angular-help-block-directive v0.0.4
  * (c) 2015 Dan Mindru http://mindrudan.com
  * License: MIT
  */

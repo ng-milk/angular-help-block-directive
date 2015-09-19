@@ -1,6 +1,6 @@
 {
   "name": "angular-help-block-directive",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A directive that will help you display your help blocks inline. Read more about it  on https://ngmilk.rocks/2015/09/15/angular-directive-for-collapsible-help-blocks-ng-help-block/",
   "main": "src/index.js",
   "scripts": {

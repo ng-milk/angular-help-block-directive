@@ -1,5 +1,5 @@
 /*
- * angular-help-block-directive v0.0.2
+ * angular-help-block-directive v0.0.3
  * (c) 2015 Dan Mindru http://mindrudan.com
  * License: MIT
  */
@@ -35,7 +35,6 @@ function helpBlockDirective(){
                   <i ng-if="iconClass" class="{{iconClass}}"></i>
                   <span ng-bind="title"></span>
                 </p>
-
                 <p class="hb-content" ng-bind="content" ng-show="hbVisible"></p>
               </section>',
     link: helpBlockLink

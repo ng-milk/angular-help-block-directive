@@ -16,13 +16,46 @@
   <!-- Just some body style to space things up -->
   <style>
     body{
-      padding:60px;
+      padding: 120px 60px;
+      color:white;
+
+      /* So much gradient, check out -> http://uigradients.com */
+      background: -webkit-linear-gradient(90deg, #000000 10%, #53346D 90%); /* Chrome 10+, Saf5.1+ */
+      background:    -moz-linear-gradient(90deg, #000000 10%, #53346D 90%); /* FF3.6+ */
+      background:     -ms-linear-gradient(90deg, #000000 10%, #53346D 90%); /* IE10 */
+      background:      -o-linear-gradient(90deg, #000000 10%, #53346D 90%); /* Opera 11.10+ */
+      background:         linear-gradient(90deg, #000000 10%, #53346D 90%); /* W3C */
+    }
+
+    h1{
+      font-size:1.6em;
+      font-weight: 300;
+      margin-bottom:30px;
+    }
+
+    footer{
+      margin-top:30px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(48, 39, 56, 0.4);
+    }
+
+    /* Change directive expanded style */
+    .hb-row.expanded {
+      border-left: 4px solid #452B5A;
     }
   </style>
 </head>
   <body ng-app="app" ng-controller="ctrl">
 
-    <section help-block help-block-title="{{title}}" help-block-content="{{content}}" help-block-icon-class="fa fa-question-circle"></section>
+    <section class="col-xs-12">
+      <h1>Angular help block demo</h1>
+      <section help-block help-block-title="{{title}}" help-block-content="{{content}}" help-block-icon-class="fa fa-question-circle"></section>
+    </section>
+
+    <footer class="col-xs-12">
+      <a class="btn btn-primary" href="https://github.com/ng-milk/angular-collapsible-block-directive"><i class="fa fa-code-fork"></i> Fork on Github</a>
+      <a class="btn btn-default" href="https://github.com/ng-milk/angular-collapsible-block-directive/issues"><i class="fa fa-bug"></i> Submit an issue</a>
+    </footer>
 
     <!-- Local JS -->
     <script src="dist/ng-help-block.js"></script>

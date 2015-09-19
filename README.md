@@ -33,7 +33,7 @@ See [index.html](https://github.com/ng-milk/angular-help-block-directive/blob/ma
 ```
 
 ## Title icon
-You can pass a 'title' icon to the directive via the `help-block-icon-class` attribute. In the example [index.html](https://github.com/ng-milk/angular-help-block-directive/blob/master/index.html) is used (the icon is provided by [font-awesome](https://fortawesome.github.io/Font-Awesome/)).
+You can pass a 'title' icon to the directive via the `help-block-icon-class` attribute. In the example [index.html](https://github.com/ng-milk/angular-help-block-directive/blob/master/index.html) [font-awesome](https://fortawesome.github.io/Font-Awesome/) is used.
 
 ```html
 <section help-block help-block-title="{{title}}" help-block-content="{{content}}" help-block-icon-class="fa fa-question-circle"></section>
@@ -42,7 +42,7 @@ You can pass a 'title' icon to the directive via the `help-block-icon-class` att
 ## Further customization
 The class `expanded` will be appended to the directive container when the help block is toggled.
 To override the directive styles you can customize the following:
-* `.hb-row {}` -> the directive container
+* `.hb-row` -> the directive container
 * `.hb-row.expanded` -> the directive container when toggled
 * `.hb-title` -> the directive title
 * `.hb-content` -> the directive content

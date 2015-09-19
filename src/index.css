@@ -2,7 +2,7 @@
   width: 100%;
   margin: 10px 0 0 0;
   position: relative;
-  left: -15px;
+  left: -19px; /* Padding + border size */
   padding-left: 15px;
   border-left: 4px solid transparent;
   transition: border 0.3s ease-in-out;
@@ -31,6 +31,7 @@
 
 .hb-content {
   position:relative;
+  font-weight:300;
   padding-bottom: 10px;
   transition: all .2s ease
 }
@@ -43,7 +44,7 @@
 }
 
 .hb-row p {
-  margin-top: 5px;
+  margin-top:15px;
   margin-bottom: 0
 }
 
